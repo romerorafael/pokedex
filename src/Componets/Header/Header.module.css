@@ -1,0 +1,71 @@
+.header{
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 7rem;
+    background-color: var(--pokemon-yellow);
+    box-shadow: 0px 4px 16px rgba(1, 28, 64, 0.2);
+}
+ul{
+    display: flex;
+}
+li{
+    padding: 1rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.menu :global(a.active)
+{
+    border-bottom: 2px solid #000000;
+    padding: 0.9rem 0;
+}
+
+/*mobile format*/
+.mobileButton {
+    background-color: transparent;
+    border-radius: 0.2rem;
+    height: 60px;
+    width: 60px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid transparent;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.mobileButton::after {
+    content: '';
+    display: block;
+    width: 2rem;
+    height: 6px;
+    border-radius: 3px;
+    background-color: currentColor;
+    box-shadow: 0 10px currentColor, 0 -10px currentColor;
+    transition: 0.2s;
+}
+
+.menu.mobile{
+    position: fixed;
+    top: 100px;
+    right: 0;
+    width: 100vw;
+    text-align: center;
+    background-color: linear-gradiet(var(--pokemon-yellow), var(--pokemon-dark-yellow));
+    height: fit-content;
+}
+
+.menu.mobile ul{
+    flex-direction: column;
+}
+.menu.mobile ul li{
+    background-color: var(--pokemon-yellow);
+}
+.center
+{
+    margin: auto;
+}

@@ -1,0 +1,109 @@
+.container
+{
+    background-color: var(--pokemon-yellow);
+    padding: 3rem 4rem;
+    display: flex;
+    position: relative;
+    width: 100vw;   
+    min-height: calc(100vh - 100px);
+}
+
+.containerMobile{
+    flex-direction: column-reverse;
+}
+
+.containerTextosDesktop{
+    width: 50vw;
+    padding: 2rem;
+    max-width: 650px;
+}
+.containerTextosDesktop h1{
+    font-size: 4.5rem;
+    line-height: 5.25rem;
+    letter-spacing: 4px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+.containerTextosMobile{
+    margin-top: 15rem;
+    text-align: center;
+}
+.containerTextosMobile h1{
+    font-weight: 400;
+    font-size: 2.4rem;
+    letter-spacing: 4px;
+    margin-bottom: 1rem;
+}
+.containerTextosMobile h2{
+    font-size: 1.45rem;
+}
+h1 span
+{
+    font-weight: 700;
+}
+h2{
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+.imgDesktop{
+    position: fixed;
+    right: 0;
+    top: 10%;
+}
+.imgMobile{
+    margin: auto;
+    width: 50%;
+}
+.button{
+    font-size: 1.4rem;
+    background: #73D677;
+    box-shadow: inset 0px -9px 0px rgba(0, 0, 0, 0.18);
+    border-radius: 11px;
+    height: 60px;
+    width: 230px;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+    cursor: pointer;
+    border: none;
+}
+.buttonMobile{
+    font-size: 1.4rem;
+    background: #73D677;
+    box-shadow: inset 0px -9px 0px rgba(0, 0, 0, 0.18);
+    border-radius: 11px;
+    height: 60px;
+    width: 230px;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+    cursor: pointer;
+    border: none;
+    margin: auto;
+}
+.bannerDesktop{
+    height: 100%;
+    background-size: contain !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    width: 50vw;
+    position: absolute;
+    right: 0;
+    top: -30px;
+}
+.bannerMobile
+{
+    height: 50%;
+    width: 75%;
+    background-size: contain !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    position: fixed;
+    top: 40px;
+}
